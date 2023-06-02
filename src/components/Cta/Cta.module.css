@@ -1,0 +1,31 @@
+.cta {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #fff;
+  background-image: url("../../assets/bg-boost-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+}
+
+.cta a {
+  text-decoration: none;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 100px;
+}
+.cta a:hover {
+  background-color: hsl(180, 68%, 63%);
+}
+@media (max-width: 425px) {
+  .cta {
+    padding: 4rem 1rem;
+    background-image: url("../../assets/bg-boost-mobile.svg");
+  }
+  .cta a {
+    padding: 1.2rem 2.4rem;
+  }
+}

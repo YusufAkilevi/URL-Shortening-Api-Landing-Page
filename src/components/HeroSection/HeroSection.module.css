@@ -1,0 +1,68 @@
+.hero-section {
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  margin: 4rem auto 0;
+}
+.description {
+  width: 40%;
+}
+.description h1 {
+  font-size: 64px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+.description p {
+  font-size: 18px;
+  color: hsl(0, 0%, 75%);
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+.description a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 100px;
+}
+.description a:hover {
+  background-color: hsl(180, 68%, 63%);
+}
+.illustration {
+  width: 60%;
+  height: 482px;
+}
+.illustration svg {
+  position: absolute;
+  top: 0;
+  right: -150px;
+}
+@media (max-width: 425px) {
+  .hero-section {
+    width: 90%;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .illustration {
+    width: 100%;
+    height: auto;
+  }
+  .illustration svg {
+    position: static;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+  .description h1 {
+    margin-top: 2rem;
+    font-size: 48px;
+  }
+  .description p {
+    margin-bottom: 1.5rem;
+  }
+}

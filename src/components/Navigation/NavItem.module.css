@@ -1,0 +1,15 @@
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: hsl(255, 11%, 22%);
+}
+.nav-item:nth-child(3) {
+  margin-right: auto;
+}
+@media (max-width: 425px) {
+  .nav-item:nth-child(3) {
+    margin-right: 0;
+  }
+}

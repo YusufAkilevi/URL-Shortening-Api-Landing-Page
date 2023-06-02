@@ -1,0 +1,60 @@
+.list-item {
+  width: 80%;
+  margin: 0 auto 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 7px;
+}
+.shortened {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.shortened button {
+  cursor: pointer;
+  border: none;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+}
+.shortened button:hover {
+  background-color: hsl(180, 68%, 63%);
+}
+.shortened span {
+  color: hsl(180, 68%, 63%);
+}
+.copied button {
+  background-color: hsl(255, 11%, 22%);
+}
+.copied button:hover {
+  background-color: hsl(255, 6%, 25%);
+}
+@media (max-width: 425px) {
+  .list-item {
+    text-align: left;
+    padding: 0;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .original {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .shortened {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .shortened button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+}
