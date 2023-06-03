@@ -1,19 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavItem from "./NavItem";
 import classes from "./Navigation.module.css";
+import MobileNavigation from "./MobileNavigation";
 
 const navItemsLeft = ["Features", "Pricing", "Resources"];
 const navItemsRight = ["Login", "Sign Up"];
 
 const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [width, setWidth] = useState();
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    window.addEventListener("resize", function () {
+      if (width > 425) setIsMobile(false);
+      setWidth(window.innerWidth);
+    });
+  }, []);
   const clickHandler = () => {
     setIsMobile((prevState) => !prevState);
   };
 
   return (
     <>
-      {isMobile ? (
+      {width > 425 && (
         <div className={classes.nav}>
           <ul className={classes["nav-list-left"]}>
             {navItemsLeft.map((item) => (
@@ -26,9 +35,8 @@ const Navigation = () => {
             ))}
           </ul>
         </div>
-      ) : (
-        ""
       )}
+      {isMobile && <MobileNavigation />}
       <div className={classes.mobileNav}>
         <button onClick={clickHandler}>
           <svg
