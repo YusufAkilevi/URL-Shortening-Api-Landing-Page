@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ProductInfo from "./components/ProductInfo/ProductInfo";
 import UrlShorten from "./components/UrlShorten/UrlShorten";
-import Cta from "./components/CTA/Cta";
+import Cta from "./components/Cta/Cta";
 import Footer from "./components/Footer/Footer";
 function App() {
   const [shortenedUrlLinks, setShortenedUrlLinks] = useState([]);
