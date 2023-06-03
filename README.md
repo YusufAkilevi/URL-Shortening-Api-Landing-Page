@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/YusufAkilevi/URL-Shortening-Api-Landing-Page](https://github.com/YusufAkilevi/URL-Shortening-Api-Landing-Page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://url-shortening-landing-page-yakilevs.netlify.app/](https://url-shortening-landing-page-yakilevs.netlify.app/)
 
 ## My process
 
